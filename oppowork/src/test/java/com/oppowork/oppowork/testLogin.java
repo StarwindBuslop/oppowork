@@ -13,17 +13,20 @@ import com.oppowork.oppowork.model.User;
 public class testLogin {
 
 	@Test
-	void testEmpty() {
+	void testLogin() {
 		LoginController lc = new LoginController();
-		User user = new User("","12345");
-		assertTrue(lc.loginEmpty(user));
+		User user = new User("Pepe2","12345");
+		assertTrue(lc.login(user));
 		
 	}
 	@Test
-	void testEmptyPassword() {
-		User user = new User("Pepe2","12345");
-		assertEquals("",user.getUsername());
+	void testLoginEmpty() {
+		LoginController lc = new LoginController();
+		User user = new User("","");
+		assertTrue(lc.login(user));
 		
 	}
+	
+	
 	
 }

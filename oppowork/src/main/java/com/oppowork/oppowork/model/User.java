@@ -4,7 +4,7 @@ public class User {
 
 	private String username;
 	private String password;
-	//Entidad
+
 	public User() {
 		
 	}
